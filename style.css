@@ -12,21 +12,30 @@ header {
   text-align: center;
   color: #000;
   font-size: 40px;
-  position: fixed;
   line-height: 1.5;
   width: 100%;
-  top: 0;
+}
+
+.content-container {
+  /*margin-top: 160px; 
+  height: calc(100vh - 160px);*/ 
+  overflow-y: auto; 
 }
 
 .section-one {
-  background: url('https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/background%20sec%201.png') no-repeat center center fixed; 
+  padding:100px;
+  background: url('https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/background%20sec%201.png') no-repeat center center fixed;
   background-size: cover;
-  width: 100%;
   text-align: center;
-  color: #EEE5E9; /* Adjust text color for visibility on the background */
+  color: #EEE5E9;
   font-size: 18px;
   line-height: 1.5;
+  padding: 50px;
 }
+
+
+
+/* Add styles for more sections if needed */
 
 footer {
   padding: 20px;
