@@ -4,12 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentIndex = 0;
 
   function changeSlide() {
+    images[currentIndex].style.opacity = 0;
     currentIndex = (currentIndex + 1) % images.length;
-    images[currentIndex].click(); // Trigger FancyBox
+    images[currentIndex].style.opacity = 1;
   }
-
-  // Change slide every second
-  setInterval(changeSlide, 2000); // Change image every 2 seconds
 
   // Initialize FancyBox
   $(document).ready(function () {
@@ -17,4 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
       loop: true,
     });
   });
+
+  // Change slide every 5 seconds (adjust the interval as needed)
+  setInterval(changeSlide, 5000); // Change image every 5 seconds
 });
