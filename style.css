@@ -29,6 +29,7 @@ header {
   position: relative;
   overflow: auto; 
   padding: 100px;
+  font-family: Mulish;
   background: url('https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/background%20sec%201.png') no-repeat center center fixed;
   background-size: cover;
   text-align: left;
@@ -40,7 +41,7 @@ header {
 
 .text-container {
   position: absolute;
-  top: 18%;
+  top: 20%;
   left: 10%;
   width: 40%;
   font-size:18px;
@@ -51,7 +52,7 @@ header {
 .topslideshow {
   position: absolute;
   top: 10%;
-  left: 50%;
+  left: 54%;
   width: 300px; /* Adjust the width to fit the container */
   height: 300px; /* Adjust the height to fit the container */
 }
