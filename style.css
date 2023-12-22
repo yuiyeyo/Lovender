@@ -19,21 +19,62 @@ header {
 .content-container {
   /*margin-top: 160px; 
   height: calc(100vh - 160px);*/ 
+  position: relative;
   overflow-y: auto; 
 }
 
 .section-one {
-  padding:100px;
+  width:100%;
+  height: 400px;
+  position: relative;
+  overflow: auto; 
+  padding: 100px;
   background: url('https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/background%20sec%201.png') no-repeat center center fixed;
   background-size: cover;
-  text-align: center;
+  text-align: left;
   color: #EEE5E9;
   font-size: 18px;
   line-height: 1.5;
   padding: 50px;
 }
 
+.text-container {
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  width: 40%;
+  font-size:18px;
+  flex: 1;
+  padding-right: 20px;
+}
 
+.topslideshow {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 300px; /* Adjust the width to fit the container */
+  height: 300px; /* Adjust the height to fit the container */
+}
+
+.topslideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease; /* Add a smooth transition effect */
+  border-radius: 30px;
+}
+
+.topslideshow img:first-child {
+  opacity: 1; /* Show the first image initially */
+}
+
+
+
+
+/* Add styles for more sections if needed */
 
 footer {
   padding: 20px;
