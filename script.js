@@ -1,37 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const topImages = document.querySelectorAll('[data-fancybox="topslides"]');
   let currentIndex = 0;
-  const topimages = document.querySelectorAll('.topslides');
 
-  // Function to change slide
   function changeSlide() {
-    currentIndex = (currentIndex + 1) % topimages.length;
-    updateSlideshow();
+    currentIndex = (currentIndex + 1) % topImages.length;
+    $.fancybox.open(topImages, { index: currentIndex });
   }
-
-  // Function to update the slideshow
-  function updateSlideshow() {
-    // Hide all images
-    topimages.forEach((image) => {
-      image.style.display = 'none';
-    });
-
-    // Display the current image
-    topimages[currentIndex].style.display = 'block';
-  }
-
-  // Change slide every second
-  setInterval(changeSlide, 2000);
 
   // Initialize Fancybox
-  Fancybox.bind('.topslides', {
+  $.fancybox.bind('[data-fancybox="topslides"]', {
     loop: true,
   });
 
-  // Open Fancybox when an image is clicked
-  topimages.forEach((image, index) => {
-    image.addEventListener('click', () => {
-      currentIndex = index;
-      Fancybox.open(topimages, currentIndex);
-    });
-  });
+  // Start slideshow: Change slide every 2 seconds
+  setInterval(changeSlide, 2000);
 });
