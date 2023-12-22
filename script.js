@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
     images[currentIndex].style.opacity = 1;
   }
 
-  // Initialize FancyBox
+  // Change slide every second
+  setInterval(changeSlide, 1000); // Change image every 1 second
+
+  // Initialize FancyBox when an image is clicked
   $(document).ready(function () {
     $('[data-fancybox="topslides"]').fancybox({
       loop: true,
     });
   });
-
-  // Change slide every 5 seconds (adjust the interval as needed)
-  setInterval(changeSlide, 5000); // Change image every 5 seconds
 });
