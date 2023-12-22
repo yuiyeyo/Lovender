@@ -24,8 +24,9 @@ header {
 }
 
 .section-one {
+  position: absolute;
   width:100%;
-  height: 350px;
+  height: 400px;
   position: relative;
   overflow: auto; 
   padding: 100px;
@@ -41,7 +42,7 @@ header {
 
 .text-container {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 10%;
   width: 40%;
   font-size:18px;
@@ -51,7 +52,7 @@ header {
 
 .topslideshow {
   position: absolute;
-  top: 10%;
+  top: 25%;
   left: 54%;
   width: 300px; /* Adjust the width to fit the container */
   height: 300px; /* Adjust the height to fit the container */
@@ -71,7 +72,19 @@ header {
 .topslideshow img:first-child {
   opacity: 1; /* Show the first image initially */
 }
-
+.section-two {
+  width:100%;
+  height: 350px;
+  position: relative;
+  overflow: auto; 
+  padding: 100px;
+  font-family: Mulish;
+  text-align: left;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 50px;
+}
 
 
 
