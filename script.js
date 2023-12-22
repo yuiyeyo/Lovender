@@ -1,19 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const slideshow = document.querySelector('.topslideshow');
-  const images = slideshow.querySelectorAll('img');
+  const images = document.querySelectorAll('.topslides');
   let currentIndex = 0;
 
   function changeSlide() {
-    images.forEach((image, index) => {
-      if (index === currentIndex) {
-        image.style.opacity = 1;
-      } else {
-        image.style.opacity = 0;
-      }
-    });
     currentIndex = (currentIndex + 1) % images.length;
+    Fancybox.open(images, currentIndex);
   }
 
   // Change slide every second
   setInterval(changeSlide, 2000); // Change image every 2 seconds
+
+  // Initialize Fancybox
+  Fancybox.bind(images, {
+    loop: true,
+  });
 });
