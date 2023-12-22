@@ -26,6 +26,7 @@ header {
   position: relative;
   overflow: auto; 
   padding: 100px;
+  height: 400px;
   font-family: 'Mulish', sans-serif;
   background: url('https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/background%20sec%201.png') no-repeat center center fixed;
   background-size: cover;
