@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
   setInterval(changeSlide, 2000); // Change image every 2 seconds
 
   // Initialize Fancybox
-  Fancybox.bind(topimages, {
+  /*Fancybox.bind(topimages, {
     loop: true,
   });
 
   // Show the first image immediately
-  showImage(currentIndex);
+  showImage(currentIndex);*/
 });
