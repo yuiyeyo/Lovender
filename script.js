@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const topSlide = document.getElementById('topslide');
-  const images = topSlide.querySelectorAll('img');
+  const topImages = document.querySelectorAll('.topslideshow a');
+
+  // Initialize FancyBox
+  Fancybox.bind(topImages, {
+    loop: true,
+  });
+
   let currentIndex = 0;
 
   function changeSlide() {
-    images[currentIndex].style.opacity = 0;
-    currentIndex = (currentIndex + 1) % images.length;
-    images[currentIndex].style.opacity = 1;
+    currentIndex = (currentIndex + 1) % topImages.length;
+    Fancybox.open(topImages, currentIndex);
   }
 
   // Change slide every second
