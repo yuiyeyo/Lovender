@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentIndex = 0;
 
   function changeSlide() {
-    images[currentIndex].style.opacity = 0;
+    $(images[currentIndex]).fadeOut(500); // Fade out current image
     currentIndex = (currentIndex + 1) % images.length;
-    images[currentIndex].style.opacity = 1;
+    $(images[currentIndex]).fadeIn(500); // Fade in next image
   }
 
   // Change slide every second
