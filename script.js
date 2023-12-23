@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const topSlide = document.getElementById('topslide');
-  const images = topSlide.querySelectorAll('a[data-fancybox="topslides"]');
+  const images = topSlide.querySelectorAll('.topslideshow a[data-fancybox="topslides"]');
   let currentIndex = 0;
 
   function changeSlide() {
