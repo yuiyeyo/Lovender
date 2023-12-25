@@ -1,22 +1,21 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const topSlide = document.getElementById('topslide');
-  const images = topSlide.querySelectorAll('.topslideshow a[data-fancybox="topslides"]');
-  let currentIndex = 0;
+document.addEventListener("DOMContentLoaded", function() {
+    const topGalleryContainer = document.querySelector(".topgallery-container");
+    const topGallery = document.querySelector(".topgallery");
+    const images = document.querySelectorAll(".topgallery img");
+    let scrollAmount = 0;
+    const scrollSpeed = 1.5; // Adjust the scroll speed as needed
 
-  function changeSlide() {
-    images[currentIndex].style.display = 'none'; // Hide current image
-    currentIndex = (currentIndex + 1) % images.length;
-    images[currentIndex].style.display = 'block'; // Show next image
-  }
+    // Clone the images to ensure continuous scrolling
+    topGallery.innerHTML += topGallery.innerHTML;
 
-  // Change slide every second
-  setInterval(changeSlide, 1000); // Change image every 1 second
+    function autoScroll() {
+        scrollAmount += scrollSpeed;
+        topGallery.style.transform = `translateX(-${scrollAmount}px)`;
 
-  // Initialize FancyBox when an image is clicked
-  $(document).on('click', '[data-fancybox="topslides"]', function () {
-    $.fancybox.open(images, {
-      loop: true,
-      index: currentIndex,
-    });
-  });
+        if (scrollAmount >= topGallery.scrollWidth / 2) {
+            scrollAmount = 0;
+        }
+    }
+
+    setInterval(autoScroll, 30); 
 });
