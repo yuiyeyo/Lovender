@@ -61,7 +61,7 @@ header {
   text-align: center;
   color: #EEE5E9;
   background-color: #000;
-  font-size: 40px;
+  font-size: 18px;
   line-height: 1.5;
 
 }
@@ -98,3 +98,219 @@ span.size-40 {
   transform: translateX(-50%);
   top: 530px;
 }
+.section-three {
+  position: relative;
+  overflow-y: hidden; 
+  padding: 0px;
+  height: 900px;
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+  color: #000;
+  background-color: #EEE5E9;
+  font-size: 18px;
+  line-height: 1.5;
+
+}
+
+.living-room {
+    position: relative;
+   overflow-y:hidden;
+     margin-top: 0;
+    max-width: 33%;
+    margin-left: 0;
+}
+
+
+.living-room img {
+    width: 33%; 
+    height: auto;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.living-room-text{
+  width:33%;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #EEE5E9;
+  }
+
+
+
+  .living-room img {
+      width: 33%; 
+      height: auto;
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+  }
+
+  
+  
+  .living-room a {
+      display: block;
+      top: 0;
+      left: 0;
+      /*transform: translateY(20px);*/
+      opacity: 1;
+      transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  }
+
+  .living-room a.active img {
+      /*transform: translateY(0);*/
+      opacity: 1;
+  }
+
+
+dining-room {
+  position: relative;
+ overflow-y:hidden;
+   margin-top: 0;
+  max-width: 33%;
+  margin-left: 33%;
+}
+
+
+.dining-room img {
+  width: 33%; 
+  height: auto;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.dining-room-text{
+width:33%;
+height: auto;
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #EEE5E9;
+}
+
+
+
+
+.dining-room img {
+    width: 33%; 
+    height: auto;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+.dining-room a {
+    display: block;
+    top: 0;
+    left: 0;
+    /*transform: translateY(20px);*/
+    opacity: 1;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.dining-room a.active img {
+    /*transform: translateY(0);*/
+    opacity: 1;
+}
+
+gazebo {
+  position: relative;
+ overflow-y:hidden;
+   margin-top: 0;
+  max-width: 33%;
+  margin-left: 66%;
+}
+
+
+.gazebo img {
+  width: 33%; 
+  height: auto;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.gazebo-text{
+width:33%;
+height: auto;
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #EEE5E9;
+}
+
+.gazebo a {
+    display: block;
+    top: 0;
+    left: 0;
+    /*transform: translateY(20px);*/
+    opacity: 1;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.gazebo a.active img {
+    /*transform: translateY(0);*/
+    opacity: 1;
+}
+  
+  famroom {
+    position: relative;
+   overflow-y:hidden;
+     margin-top: 0;
+    max-width: 100%;
+    margin-left: 0%;
+  }
+
+
+  .famroom img {
+    width: 100%; 
+    height: auto;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .famroom-text{
+  width:100%;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #EEE5E9;
+  }
+
+  .famroom a {
+      display: block;
+      top: 0;
+      left: 0;
+      /*transform: translateY(20px);*/
+      opacity: 1;
+      transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  }
+
+  .gazebo a.active img {
+      /*transform: translateY(0);*/
+      opacity: 1;
+  }
+
+
+
+
+.slideshow-container{
+  position: relative;
+  overflow-y: hidden; 
+  overflow-x:hidden;
+  padding: 0px;
+  height: 300px;
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+  color: #EEE5E9;
+  background-color: #000;
+  font-size: 18px;
+  line-height: 1.5;
+
+}
+
