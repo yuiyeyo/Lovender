@@ -315,3 +315,12 @@ color: #EEE5E9;
 
 }
 
+
+@media only screen and (max-width: 600px) {
+  .slideshow-container {
+    height: 200px; /* Adjust height for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+
