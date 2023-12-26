@@ -291,7 +291,7 @@ color: #EEE5E9;
       transition: transform 1s ease-in-out, opacity 1s ease-in-out;
   }
 
-  .gazebo a.active img {
+  .famroom a.active img {
       /*transform: translateY(0);*/
       opacity: 1;
   }
