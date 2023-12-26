@@ -318,7 +318,7 @@ color: #EEE5E9;
 
 @media only screen and (max-width: 600px) {
   .slideshow-container {
-    height: 125px; /* Adjust height for smaller screens */
+    height: 123px; /* Adjust height for smaller screens */
     font-size: 7px; /* Adjust font size for smaller screens */
   }
 }
