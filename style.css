@@ -320,12 +320,13 @@ color: #EEE5E9;
     height: 123px; /* Adjust height for smaller screens */
     font-size: 7px; /* Adjust font size for smaller screens */
   }
-    .famroom-text {
-                font-size: 12px; /* Adjust the font size for smaller screens */
-            
-        }
+
+  .famroom-text {
+    font-size: 12px; /* Adjust the font size for smaller screens */
+  }
+
   span {
-      font-size: 4px; /* Adjust font size for smaller screens */
-      transform: translateX(-50%);
+    font-size: 4px; /* Adjust font size for smaller screens */
+    transform: translateX(-50%);
   }
 }
