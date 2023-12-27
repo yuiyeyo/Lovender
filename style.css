@@ -6,8 +6,8 @@ body {
 
 header {
   background: url('https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/header.png') no-repeat center center fixed;
-  background-size: cover;
-  background-color: #000;
+  background-size: contain;
+  background-color: #494762;
   padding: 5px;
   width: 100%;
   height: 200px;
@@ -30,7 +30,7 @@ header {
   height: 30vh;
   font-family: 'Mulish', sans-serif;
   text-align: left;
-  background-color: #000;
+  background-color: #EFEAE6;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -59,8 +59,8 @@ header {
   height: 900px;
   font-family: 'Mulish', sans-serif;
   text-align: center;
-  color: #EEE5E9;
-  background-color: #000;
+  color: #000;
+  background-color: #EFEAE6;
   font-size: 18px;
   line-height: 1.5;
 
@@ -72,7 +72,7 @@ header {
     'wght' 400,
     'GRAD' 0,
     'opsz' 24;
-  color: #EEE5E9; /* Set the color you want */
+  color: #000; /* Set the color you want */
 }
 span.size-40 {
   font-size: 40px;
@@ -84,7 +84,7 @@ span.size-40 {
   text-align: center;
   font-size:18px;
   flex: 1;
-  color:#EEE5E9;
+  color:#000;
   padding-right: 20px;
 }
 
@@ -106,7 +106,7 @@ span.size-40 {
   font-family: 'Mulish', sans-serif;
   text-align: center;
   color: #000;
-  background-color: #EEE5E9;
+  background-color: #EFEAE6;
   font-size: 18px;
   line-height: 1.5;
 
@@ -216,17 +216,19 @@ color: #EEE5E9;
     opacity: 1;
 }
 
-gazebo {
+
+.gazebo {
   position: relative;
- overflow-y:hidden;
-   margin-top: 0;
-  max-width: 33%;
-  margin-left: 66%;
+  overflow-y:hidden;
+  margin-top: 0;
+  max-width: 34%;
+  margin-right: 0%;
 }
 
 
 .gazebo img {
-  width: 33%; 
+  width: 34%; 
+  overflow-y: hidden;
   height: auto;
   opacity: 1;
   transition: opacity 1s ease-in-out;
@@ -256,7 +258,7 @@ color: #EEE5E9;
     opacity: 1;
 }
 
-  famroom {
+  .famroom {
     position: relative;
    overflow-y:hidden;
      margin-top: 0;
@@ -296,14 +298,92 @@ color: #EEE5E9;
       opacity: 1;
   }
 
+.bedroom {
+  position: relative;
+ overflow-y:hidden;
+   margin-top: 0;
+  max-width: 100%;
+  margin-left: 0%;
+}
 
 
+.bedroom img {
+  width: 66%; 
+  height: auto;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
 
-.slideshow-container{
+.bedroom-text{
+width: 66%;
+height: auto;
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #EEE5E9;
+}
+
+.bedroom a {
+    display: block;
+    top: 0;
+    left: 0;
+    /*transform: translateY(20px);*/
+    opacity: 1;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.bedroom a.active img {
+    /*transform: translateY(0);*/
+    opacity: 1;
+}
+
+
+.bathroom {
+  position: relative;
+ overflow-y:hidden;
+   margin-top: 0;
+  max-width: 33%;
+  margin-left: 0%;
+}
+
+
+.bathroom img {
+  width: 33%; 
+  height: auto;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.bathroom-text{
+  width:33%;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #EEE5E9;
+}
+
+.bathroom a {
+    display: block;
+    top: 0;
+    left: 0;
+    /*transform: translateY(20px);*/
+    opacity: 1;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.bathroom a.active img {
+    /*transform: translateY(0);*/
+    opacity: 1;
+}
+
+.slideshow-container {
   position: relative;
   overflow-y: hidden; 
-  overflow-x:hidden;
-  padding: 0px;
+  overflow-x: hidden;
+  padding: 0;
   height: 300px;
   font-family: 'Mulish', sans-serif;
   text-align: center;
@@ -311,10 +391,42 @@ color: #EEE5E9;
   background-color: #000;
   font-size: 18px;
   line-height: 1.5;
-
 }
 
 
+.section-four {
+  position: relative;
+  overflow-y: hidden;
+  padding: 40px;
+  height: 450px;
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+  color: #000;
+  background-color: #EFEAE6;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.section-five {
+  position: relative;
+  overflow-y: hidden;
+  padding: 40px;
+  height: 450px;
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+  color: #000;
+  background-color: #EFEAE6;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+gmp-map {
+  height: 100%;
+}
+
+/* Header and other styles... */
+
+/* Media query for smaller screens */
 @media only screen and (max-width: 600px) {
   .slideshow-container {
     height: 123px; /* Adjust height for smaller screens */
