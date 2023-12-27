@@ -104,6 +104,7 @@ $(document).ready(function () {
     });
 });
 
+
 var slideIndexFamroom = 0;
 
 function showSlidesFamroom() {
@@ -127,6 +128,62 @@ showSlidesFamroom();
 
 $(document).ready(function () {
     $(".famroom a").fancybox({
+        loop: true,
+        buttons: ["slideShow", "fullScreen", "thumbs", "close"]
+    });
+});
+
+var slideIndexBedroom = 0;
+
+function showSlidesBedroom() {
+    var slides = document.querySelectorAll('.bedroom a');
+
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.opacity = 0;
+    }
+
+    slideIndexBedroom++;
+    if (slideIndexBedroom > slides.length) {
+        slideIndexBedroom = 1;
+    }
+
+    slides[slideIndexBedroom - 1].style.opacity = 1;
+    setTimeout(showSlidesBedroom, 2000); // Change image every 2 seconds
+}
+
+// Initial call to start the dining room slideshow
+showSlidesBedroom();
+
+$(document).ready(function () {
+    $(".bedroom a").fancybox({
+        loop: true,
+        buttons: ["slideShow", "fullScreen", "thumbs", "close"]
+    });
+});
+
+var slideIndexBathroom = 0;
+
+function showSlidesBathroom() {
+    var slides = document.querySelectorAll('.bathroom a');
+
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.opacity = 0;
+    }
+
+    slideIndexBathroom++;
+    if (slideIndexBathroom > slides.length) {
+        slideIndexBathroom = 1;
+    }
+
+    slides[slideIndexBathroom - 1].style.opacity = 1;
+    setTimeout(showSlidesBathroom, 2000); // Change image every 2 seconds
+}
+
+// Initial call to start the dining room slideshow
+showSlidesBathroom();
+
+$(document).ready(function () {
+    $(".bathroom a").fancybox({
         loop: true,
         buttons: ["slideShow", "fullScreen", "thumbs", "close"]
     });
