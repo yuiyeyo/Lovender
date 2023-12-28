@@ -143,8 +143,8 @@ span.size-40 {
 
 }
 
-.living-room {
-    position: relative;
+living-room {
+    position: absolute;
    overflow-y:hidden;
      margin-top: 0;
     max-width: 33%;
@@ -167,16 +167,9 @@ span.size-40 {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #EEE5E9;
-}
+ }
 
-
-
-  .living-room img {
-      width: 33%; 
-      height: auto;
-      opacity: 1;
-      transition: opacity 1s ease-in-out;
-  }
+      
 
 
 
@@ -196,7 +189,7 @@ span.size-40 {
 
 
 dining-room {
-  position: relative;
+  position: absolute;
  overflow-y:hidden;
    margin-top: 0;
   max-width: 33%;
@@ -224,15 +217,6 @@ color: #EEE5E9;
 
 
 
-.dining-room img {
-    width: 33%; 
-    height: auto;
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}
-
-
-
 .dining-room a {
     display: block;
     top: 0;
@@ -248,8 +232,8 @@ color: #EEE5E9;
 }
 
 
-.gazebo {
-  position: relative;
+gazebo {
+  position: absolute;
   overflow-y:hidden;
   margin-top: 0;
   max-width: 34%;
@@ -289,8 +273,8 @@ color: #EEE5E9;
     opacity: 1;
 }
 
-  .famroom {
-    position: relative;
+famroom {
+    position: absolute;
    overflow-y:hidden;
      margin-top: 0;
     max-width: 100%;
@@ -329,8 +313,8 @@ color: #EEE5E9;
       opacity: 1;
   }
 
-.bedroom {
-  position: relative;
+bedroom {
+  position: absolute;
  overflow-y:hidden;
    margin-top: 0;
   max-width: 100%;
@@ -370,12 +354,12 @@ color: #EEE5E9;
 }
 
 
-.bathroom {
-  position: relative;
+bathroom {
+  position: absolute;
  overflow-y:hidden;
    margin-top: 0;
   max-width: 33%;
-  margin-left: 0%;
+  margin-right: 0%;
 }
 
 
