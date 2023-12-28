@@ -18,6 +18,24 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     setInterval(autoScroll, 30); 
+
+  const menu = document.getElementById("sticky-menu");
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", function () {
+      // Add the "sticky" class when scrolling past the header
+      menu.classList.toggle("sticky", window.scrollY > header.offsetHeight);
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
 });
 
 var slideIndexLiving = 0;
