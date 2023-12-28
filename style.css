@@ -143,13 +143,7 @@ span.size-40 {
 
 }
 
-living-room {
-    position: absolute;
-   overflow-y:hidden;
-     margin-top: 0;
-    max-width: 33%;
-    margin-left: 0;
-}
+
 
 
 .living-room img {
@@ -188,13 +182,7 @@ living-room {
   }
 
 
-dining-room {
-  position: absolute;
- overflow-y:hidden;
-   margin-top: 0;
-  max-width: 33%;
-  margin-left: 33%;
-}
+
 
 
 .dining-room img {
@@ -232,13 +220,7 @@ color: #EEE5E9;
 }
 
 
-gazebo {
-  position: absolute;
-  overflow-y:hidden;
-  margin-top: 0;
-  max-width: 34%;
-  margin-right: 0%;
-}
+
 
 
 .gazebo img {
@@ -273,13 +255,7 @@ color: #EEE5E9;
     opacity: 1;
 }
 
-famroom {
-    position: absolute;
-   overflow-y:hidden;
-     margin-top: 0;
-    max-width: 100%;
-    margin-left: 0%;
-  }
+
 
 
   .famroom img {
@@ -313,13 +289,7 @@ famroom {
       opacity: 1;
   }
 
-bedroom {
-  position: absolute;
- overflow-y:hidden;
-   margin-top: 0;
-  max-width: 100%;
-  margin-left: 0%;
-}
+
 
 
 .bedroom img {
@@ -354,13 +324,6 @@ color: #EEE5E9;
 }
 
 
-bathroom {
-  position: absolute;
- overflow-y:hidden;
-   margin-top: 0;
-  max-width: 33%;
-  margin-right: 0%;
-}
 
 
 .bathroom img {
