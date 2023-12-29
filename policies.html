@@ -19,6 +19,20 @@
      <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/silhouette.png" style="opacity: 0.3; width: 100%; position: absolute; bottom:0; left: 50%; transform: translateX(-50%);">
       <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Family%20Villa%20%26%20Self%20Photo%20logo%20transparant_putih.png" alt="Lovender Family Villa" style="width: 40%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
   </header>
+  <div class="burgermenu-button" onclick="toggleMenu()">
+      <span class="material-symbols-outlined" style="color:#EFEAE6; transform: translate(0%, 25%);">menu</span>
+    </div>
+
+    <div class="burgermenu-overlay" id="menuOverlay">
+      <div class="menu-item" onclick="navigateTo('index', 'home')">Home</div>
+      <div class="menu-item" onclick="navigateTo('index', 'facilities')">Facilities</div>
+      <div class="menu-item" onclick="navigateTo('index', 'rooms')">Rooms</div>
+      <div class="menu-item" onclick="navigateTo('index', 'review')">Reviews</div>
+      <div class="menu-item" onclick="navigateTo('index', 'rates')">Rates</div>
+      <div class="menu-item" onclick="navigateTo('index', 'contact')">Contact</div>
+      <div class="menu-item" onclick="navigateTo('policies')">Policies</div>
+  </div>
+  
   <nav id="sticky-menu">
     <p></p>
     <a href="index.html#home">HOME</a>
