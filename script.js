@@ -224,3 +224,25 @@ $(document).ready(function () {
         buttons: ["slideShow", "fullScreen", "thumbs", "close"]
     });
 });
+
+
+let currentIndexReview = 0;
+
+function showImageReview(index) {
+    const images = document.querySelectorAll('.review img');
+    images[currentIndexReview].style.display = 'none';
+    currentIndexReview = (index + images.length) % images.length;
+    images[currentIndexReview].style.display = 'block';
+}
+
+function changeImageReview(delta) {
+    showImageReview(currentIndexReview + delta);
+}
+
+// Set the initial state for all images
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.review img');
+    images.forEach((image, index) => {
+        image.style.display = index === currentIndexReview ? 'block' : 'none';
+    });
+});
