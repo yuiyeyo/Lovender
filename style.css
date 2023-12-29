@@ -8,7 +8,7 @@ header {
   /*background: url('https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/header.png') no-repeat center center fixed;*/
   background-size: contain;
   background-color: #2A2F62;
- overflow-y: auto;
+  overflow-x: hidden;
   width: 100%;
   height: 30vh;
   padding-bottom: 20px;
@@ -99,6 +99,7 @@ nav {
 }
 
 .section-one {
+  overflow-x: hidden;
   position: relative;
   overflow-y: hidden; 
   padding: 0px;
@@ -128,6 +129,7 @@ nav {
 }
 
 .section-two {
+  overflow-x: hidden;
   position: relative;
   overflow-y: hidden; 
   padding: 0px;
@@ -175,6 +177,7 @@ span.size-40 {
 }
 
 .section-three {
+  overflow-x: hidden;
   position: relative;
   overflow-y: hidden; 
   padding-top: 10%;
@@ -183,6 +186,7 @@ span.size-40 {
   width: 100%;
   min-width: 100%;
   min-height: 900px;
+  max-width: 900px;
   height: 900px;
   font-family: 'Mulish', sans-serif;
   text-align: center;
@@ -471,11 +475,13 @@ height: auto;
 
 
 .section-four {
+  overflow-x: hidden;
   position: relative;
   overflow-y: hidden;
   height: auto;
   padding-left: 10%;
   padding-right:10%;
+  padding-bottom: 5%;
   font-family: 'Mulish', sans-serif;
   text-align: justify;
   color: #000;
@@ -486,10 +492,12 @@ height: auto;
 }
 
 .section-five {
+  overflow-x: hidden;
   position: relative;
   overflow-y: hidden;
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 5%;
   height: 450px;
   font-family: 'Mulish', sans-serif;
   text-align: center;
@@ -500,11 +508,12 @@ height: auto;
 }
 
 .section-six {
+  overflow-x: hidden;
   position: relative;
   overflow-y: hidden;
   padding-left: 10%;
   padding-right:10%;
-  height: 300px;
+  height:600px;
   font-family: 'Mulish', sans-serif;
   text-align: center;
   color: #000;
@@ -514,6 +523,7 @@ height: auto;
 }
 
 .section-seven {
+  overflow-x: hidden;
   position: relative;
   overflow-y: hidden;
   padding-left: 10%;
@@ -527,6 +537,7 @@ height: auto;
   line-height: 1.5;
 }
 .section-eight {
+  overflow-x: hidden;
   position: relative;
   overflow-y: hidden;
   padding-left: 10%;
@@ -540,6 +551,7 @@ height: auto;
   line-height: 1.5;
 }
 .section-nine {
+  overflow-x: hidden;
   top: 5vh;
   position: relative;
   overflow-y: hidden;
@@ -557,6 +569,50 @@ height: auto;
 gmp-map {
   height: 100%;
 }
+
+.review {
+    text-align: center;
+}
+
+.review-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.review img {
+    max-width: 500px;
+    display: none;
+  position: absolute; 
+  width: 60vw; 
+  left: 50%; 
+  top: 30%; 
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 768px) {
+     .review img {
+       top: 15%;
+       width: 100%;
+     }
+}
+
+.prev-btn{
+  margin-right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  position:absolute; left: 15%; top: 55%; transform: translateX(-50%);
+}
+
+.next-btn 
+{
+    font-size: 24px;
+    cursor: pointer;
+  position:absolute; left: 85%; top: 55%; transform: translateX(-50%);
+}
+
+
 
 
 
@@ -596,6 +652,10 @@ gmp-map {
 
   }
 
+  .section-six{
+    height:450px;
+  }
+
   .slideshow-container {
     width:100%;
     min-height: 30vw;
@@ -615,5 +675,17 @@ gmp-map {
   {
     top:0vh;
   }
+
+  .prev-btn{
+    left: 5%;
+     top: 35%;
+    font-size: 10px;
+   } 
+  
+  .next-btn {
+    left: 95%;
+     top: 35%;
+    font-size: 10px;
+   }
 
 }
