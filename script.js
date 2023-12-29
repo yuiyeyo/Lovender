@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const header = document.querySelector("header");
 
   window.addEventListener("scroll", function () {
-      // Add the "sticky" class when scrolling past the header
       menu.classList.toggle("sticky", window.scrollY > header.offsetHeight);
   });
 
@@ -37,6 +36,27 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
 });
+
+function toggleMenu() {
+    var menuOverlay = document.getElementById("menuOverlay");
+    menuOverlay.style.display = (menuOverlay.style.display === "block") ? "none" : "block";
+}
+
+function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+}
+
+
+function navigateTo(page, targetElementId) {
+    var url = page + '.html';
+    if (targetElementId) {
+        url += '#' + targetElementId;
+    }
+    window.location.href = url;
+}
 
 var slideIndexLiving = 0;
 
@@ -81,10 +101,10 @@ function showSlidesDining() {
     }
 
     slides[slideIndexDining - 1].style.opacity = 1;
-    setTimeout(showSlidesDining, 2000); // Change image every 2 seconds
+    setTimeout(showSlidesDining, 2000); 
 }
 
-// Initial call to start the dining room slideshow
+
 showSlidesDining();
 
 $(document).ready(function () {
@@ -109,10 +129,10 @@ function showSlidesGazebo() {
     }
 
     slides[slideIndexGazebo - 1].style.opacity = 1;
-    setTimeout(showSlidesGazebo, 2000); // Change image every 2 seconds
+    setTimeout(showSlidesGazebo, 2000); 
 }
 
-// Initial call to start the dining room slideshow
+
 showSlidesGazebo();
 
 $(document).ready(function () {
@@ -138,10 +158,10 @@ function showSlidesFamroom() {
     }
 
     slides[slideIndexFamroom - 1].style.opacity = 1;
-    setTimeout(showSlidesFamroom, 2000); // Change image every 2 seconds
+    setTimeout(showSlidesFamroom, 2000); 
 }
 
-// Initial call to start the dining room slideshow
+
 showSlidesFamroom();
 
 $(document).ready(function () {
@@ -166,10 +186,9 @@ function showSlidesBedroom() {
     }
 
     slides[slideIndexBedroom - 1].style.opacity = 1;
-    setTimeout(showSlidesBedroom, 2000); // Change image every 2 seconds
+    setTimeout(showSlidesBedroom, 2000); 
 }
 
-// Initial call to start the dining room slideshow
 showSlidesBedroom();
 
 $(document).ready(function () {
@@ -194,10 +213,9 @@ function showSlidesBathroom() {
     }
 
     slides[slideIndexBathroom - 1].style.opacity = 1;
-    setTimeout(showSlidesBathroom, 2000); // Change image every 2 seconds
+    setTimeout(showSlidesBathroom, 2000);
 }
 
-// Initial call to start the dining room slideshow
 showSlidesBathroom();
 
 $(document).ready(function () {
