@@ -18,6 +18,47 @@ header {
   line-height: 1.5;
 }
 
+.burgermenu-button {
+  display:none;
+    position: fixed;
+  text-align: center;
+  width:10vw;
+  height: 10vw;
+    top: 10px;
+    right: 10px;
+    background-color: #2A2F62;
+    color: #fff;
+    cursor: pointer;
+  z-index: 1000;
+}
+@media only screen and (max-width: 600px) {
+     .burgermenu-button {
+       display: block;
+     }
+ }
+
+.burgermenu-overlay {
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 10px;
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.burgermenu-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.burgermenu-item:hover {
+    background-color: #777;
+}
+
+
 nav {
     background-color: #232B57;
     color: #EFEAE6;
@@ -28,21 +69,24 @@ nav {
     z-index: 1000;
 }
 
+@media only screen and (max-width: 600px) {
+     nav {
+       display: none;
+     }
+ }
 
 #sticky-menu a {
-    margin: 15px; /* Adjust the margin to set the gap between navigation items */
+    margin: 15px;
     text-decoration: none;
     color: #EFEAE6;
     cursor: pointer;
 }
 
+
 #sticky-menu a:hover {
     text-decoration: underline;
 }
 
-/* Additional styles for your menu items, links, etc. */
-
-/* Add styles for the "sticky" class when scrolling */
 .sticky {
     position: fixed;
     top: 0;
@@ -153,16 +197,30 @@ span.size-40 {
     transition: opacity 1s ease-in-out;
 }
 
+
 .living-room-text{
   width:33%;
   height: auto;
-  position: absolute;
-  top: 30%;
+  position: absolute; 
   left: 50%;
-  transform: translate(-50%, -50%);
+  top: 85%;
   color: #EEE5E9;
+  z-index: 10;
+  font-size: 20px; 
+  letter-spacing: 1.5px; 
+  font-weight: 700; 
+  transform: translateX(-151%);
  }
 
+@media only screen and (max-width: 600px) {
+     .living-room-text {
+       max-width: 30vw;
+         left: 30%;
+       transform: translateX(-100%);
+         font-size: 10px;
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+     }
+ }
       
 
 
@@ -196,12 +254,23 @@ span.size-40 {
 width:33%;
 height: auto;
 position: absolute;
-top: 30%;
 left: 50%;
-transform: translate(-50%, -50%);
 color: #EEE5E9;
+top: 85%;
+z-index: 10;font-size: 20px; letter-spacing: 1.5px; 
+font-weight: 700; 
+transform: translateX(-50%);
 }
 
+@media only screen and (max-width: 600px) {
+     .dining-room-text {
+       max-width: 30vw;
+         left: 50%;
+       transform: translateX(-50%);
+         font-size: 10px;
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+     }
+ }
 
 
 
@@ -234,12 +303,17 @@ color: #EEE5E9;
 .gazebo-text{
 width:33%;
 height: auto;
-position: absolute;
-top: 30%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: #EEE5E9;
+  position: absolute; left: 50%; top: 85%; z-index: 10;font-size: 20px; letter-spacing: 1.5px; font-weight: 700; transform: translateX(50%); color:#EEE5E9
 }
+@media only screen and (max-width: 600px) {
+     .gazebo-text {
+       max-width: 30vw;
+         left: 53%;
+       transform: translateX(50%);
+         font-size: 10px;
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+     }
+ }
 
 .gazebo a {
     display: block;
@@ -255,9 +329,6 @@ color: #EEE5E9;
     opacity: 1;
 }
 
-
-
-
   .famroom img {
     width: 100%; 
     height: auto;
@@ -268,12 +339,19 @@ color: #EEE5E9;
   .famroom-text{
   width:100%;
   height: auto;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #EEE5E9;
+    position: absolute; left: 50%; top: 85%; color: #EEE5E9; z-index: 10;font-size: 20px; letter-spacing: 1.5px; font-weight: 700; transform: translateX(-50%); 
   }
+
+@media only screen and (max-width: 600px) {
+     .famroom-text {
+       max-width: 100vw;
+         left: 50%;
+       transform: translateX(-50%);
+         font-size: 10px;
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+     }
+ }
+
 
   .famroom a {
       display: block;
@@ -297,17 +375,23 @@ color: #EEE5E9;
   height: auto;
   opacity: 1;
   transition: opacity 1s ease-in-out;
-}
+  }
 
 .bedroom-text{
 width: 66%;
 height: auto;
-position: absolute;
-top: 30%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: #EEE5E9;
+  position: absolute; left: 50%; top: 80%; color: #EEE5E9; z-index: 10;font-size: 20px; letter-spacing: 1.5px; font-weight: 700; transform: translateX(-75%); 
 }
+@media only screen and (max-width: 600px) {
+     .bedroom-text {
+       max-width: 100vw;
+         left: 50%;
+       transform: translateX(-75%);
+       top: 85%;
+         font-size: 10px;
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+     }
+ }
 
 .bedroom a {
     display: block;
@@ -336,12 +420,19 @@ color: #EEE5E9;
 .bathroom-text{
   width:33%;
   height: auto;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #EEE5E9;
+  position: absolute; left: 50%; top: 80%; color: #EEE5E9; z-index: 10;font-size: 20px; letter-spacing: 1.5px; font-weight: 700; transform: translateX(50%);
 }
+
+@media only screen and (max-width: 600px) {
+     .bathroom-text {
+       max-width: 100vw;
+       top: 85%;
+         left: 50%;
+       transform: translateX(50%);
+         font-size: 10px;
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+     }
+ }
 
 .bathroom a {
     display: block;
@@ -362,7 +453,7 @@ color: #EEE5E9;
   overflow-y: hidden; 
   overflow-x: hidden;
   padding: 0;
-  height: 300px;
+  height: 30vw;
   font-family: 'Mulish', sans-serif;
   text-align: center;
   color: #EEE5E9;
@@ -383,6 +474,7 @@ color: #EEE5E9;
   background-color: #EFEAE6;
   font-size: 18px;
   line-height: 1.5;
+  min-height: 10px;
 }
 
 .section-five {
@@ -441,7 +533,7 @@ color: #EEE5E9;
   padding: 40px;
   height: auto;
   font-family: 'Mulish', sans-serif;
-  text-align: center;
+  text-align: justify;
   color: #000;
   background-color: #EFEAE6;
   font-size: 18px;
@@ -454,16 +546,15 @@ gmp-map {
 
 
 
-/* Header and other styles... */
 
-@media only screen and (max-width: 600px) {
-  /* Adjustments for smaller screens */
+@media only screen and (max-width: 720px) {
+ 
   header {
-    height: 10vh; /* Adjust header height for smaller screens */
-    font-size: 24px; /* Adjust font size for smaller screens */
+    height: 10vh; 
+    font-size: 24px;
   }
   nav {
-      top: 11vh; /* Set the height of your header */
+      top: 11vh; 
       font-size: 10px;
   }
 
@@ -472,7 +563,7 @@ gmp-map {
     font-variation-settings: 'OPSZ' 50;
   }
 
-  .gazebo-text {
+  .living-room-text {
       font-size: 10px;
   }
 
@@ -501,8 +592,7 @@ gmp-map {
   .gazebo-text,
   .bedroom-text,
   .bathroom-text {
-    font-size: 8px; /* Adjust font size for smaller screens */
+    font-size: 8px; 
   }
 
-  /* Additional adjustments as needed */
 }
