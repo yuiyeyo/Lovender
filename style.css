@@ -40,8 +40,8 @@ header {
 .burgermenu-overlay {
     display: none;
     position: fixed;
-    top: 40px;
-    right: 10px;
+    top: 10vw;
+    right: 10vw;
     background-color: #555;
     color: #fff;
     padding: 10px;
@@ -173,10 +173,16 @@ span.size-40 {
   transform: translateX(-50%);
   top: 530px;
 }
+
 .section-three {
   position: relative;
   overflow-y: hidden; 
-  padding: 0px;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right:10%
+  width: 100%;
+  min-width: 100%;
+  min-height: 900px;
   height: 900px;
   font-family: 'Mulish', sans-serif;
   text-align: center;
@@ -184,8 +190,14 @@ span.size-40 {
   background-color: #EFEAE6;
   font-size: 18px;
   line-height: 1.5;
-
 }
+
+@media only screen and (max-width: 768px) {
+     .section-three {
+       padding:0px;
+       min-height:400px;
+     }
+ }
 
 
 
@@ -212,15 +224,15 @@ span.size-40 {
   transform: translateX(-151%);
  }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
      .living-room-text {
        max-width: 30vw;
-         left: 30%;
+         left: 33%;
        transform: translateX(-100%);
          font-size: 10px;
-       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
      }
- }
+}
       
 
 
@@ -238,9 +250,6 @@ span.size-40 {
       /*transform: translateY(0);*/
       opacity: 1;
   }
-
-
-
 
 
 .dining-room img {
@@ -262,13 +271,13 @@ font-weight: 700;
 transform: translateX(-50%);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
      .dining-room-text {
        max-width: 30vw;
          left: 50%;
        transform: translateX(-50%);
          font-size: 10px;
-       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
      }
  }
 
@@ -305,13 +314,13 @@ width:33%;
 height: auto;
   position: absolute; left: 50%; top: 85%; z-index: 10;font-size: 20px; letter-spacing: 1.5px; font-weight: 700; transform: translateX(50%); color:#EEE5E9
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
      .gazebo-text {
        max-width: 30vw;
          left: 53%;
        transform: translateX(50%);
          font-size: 10px;
-       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
      }
  }
 
@@ -342,13 +351,13 @@ height: auto;
     position: absolute; left: 50%; top: 85%; color: #EEE5E9; z-index: 10;font-size: 20px; letter-spacing: 1.5px; font-weight: 700; transform: translateX(-50%); 
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
      .famroom-text {
        max-width: 100vw;
          left: 50%;
        transform: translateX(-50%);
          font-size: 10px;
-       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
      }
  }
 
@@ -366,9 +375,6 @@ height: auto;
       /*transform: translateY(0);*/
       opacity: 1;
   }
-
-
-
 
 .bedroom img {
   width: 66%; 
@@ -389,7 +395,7 @@ height: auto;
        transform: translateX(-75%);
        top: 85%;
          font-size: 10px;
-       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
      }
  }
 
@@ -411,7 +417,7 @@ height: auto;
 
 
 .bathroom img {
-  width: 33%; 
+  width: 34%; 
   height: auto;
   opacity: 1;
   transition: opacity 1s ease-in-out;
@@ -430,7 +436,7 @@ height: auto;
          left: 50%;
        transform: translateX(50%);
          font-size: 10px;
-       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
      }
  }
 
@@ -453,7 +459,8 @@ height: auto;
   overflow-y: hidden; 
   overflow-x: hidden;
   padding: 0;
-  height: 30vw;
+  width: 80%;
+  height: 250px;
   font-family: 'Mulish', sans-serif;
   text-align: center;
   color: #EEE5E9;
@@ -466,8 +473,9 @@ height: auto;
 .section-four {
   position: relative;
   overflow-y: hidden;
-  padding: 40px;
-  height: 450px;
+  height: auto;
+  padding-left: 10%;
+  padding-right:10%;
   font-family: 'Mulish', sans-serif;
   text-align: justify;
   color: #000;
@@ -480,7 +488,8 @@ height: auto;
 .section-five {
   position: relative;
   overflow-y: hidden;
-  padding: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
   height: 450px;
   font-family: 'Mulish', sans-serif;
   text-align: center;
@@ -493,7 +502,8 @@ height: auto;
 .section-six {
   position: relative;
   overflow-y: hidden;
-  padding: 40px;
+  padding-left: 10%;
+  padding-right:10%;
   height: 300px;
   font-family: 'Mulish', sans-serif;
   text-align: center;
@@ -506,7 +516,8 @@ height: auto;
 .section-seven {
   position: relative;
   overflow-y: hidden;
-  padding: 40px;
+  padding-left: 10%;
+  padding-right:10%;
   height: 450px;
   font-family: 'Mulish', sans-serif;
   text-align: center;
@@ -518,7 +529,8 @@ height: auto;
 .section-eight {
   position: relative;
   overflow-y: hidden;
-  padding: 40px;
+  padding-left: 10%;
+  padding-right:10%;
   height: 450px;
   font-family: 'Mulish', sans-serif;
   text-align: center;
@@ -528,9 +540,11 @@ height: auto;
   line-height: 1.5;
 }
 .section-nine {
+  top: 5vh;
   position: relative;
   overflow-y: hidden;
-  padding: 40px;
+  padding-left: 10%;
+  padding-right:10%;
   height: auto;
   font-family: 'Mulish', sans-serif;
   text-align: justify;
@@ -547,7 +561,7 @@ gmp-map {
 
 
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
  
   header {
     height: 10vh; 
@@ -562,10 +576,8 @@ gmp-map {
     font-size: 50px;
     font-variation-settings: 'OPSZ' 50;
   }
+  
 
-  .living-room-text {
-      font-size: 10px;
-  }
 
   .additional-icons img{
     height: 50px;
@@ -580,19 +592,28 @@ gmp-map {
   .section-three,
   .section-four{
     height: auto;
+    font-size:16px;
+
   }
 
   .slideshow-container {
     width:100%;
-    height: 30vw;
+    min-height: 30vw;
+    max-height: 30vw;
   }
 
+  .living-room-text,
   .famroom-text,
   .dining-room-text,
   .gazebo-text,
   .bedroom-text,
   .bathroom-text {
     font-size: 8px; 
+  }
+
+  .section-nine
+  {
+    top:0vh;
   }
 
 }
