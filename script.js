@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    setInterval(autoScroll, 30); 
+    setInterval(autoScroll, 150); 
 
   const menu = document.getElementById("sticky-menu");
   const header = document.querySelector("header");
