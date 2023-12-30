@@ -21,31 +21,39 @@
       <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Family%20Villa%20%26%20Self%20Photo%20logo%20transparant_putih.png" alt="Lovender Family Villa" style="width: 40%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
   </header>
 
-  <div class="burgermenu-button" onclick="toggleMenu()">
+  
+  <div class="burgermenu-button" onclick="toggleMenu()" id="burgerButton">
     <span class="material-symbols-outlined" style="color:#EFEAE6; transform: translate(0%, 25%);">menu</span>
   </div>
 
   <div class="burgermenu-overlay" id="menuOverlay">
     <div class="menu-item" onclick="scrollToSection('home')">Home</div>
+    <p></p>
     <div class="menu-item" onclick="scrollToSection('facilities')">Facilities</div>
+    <p></p>
     <div class="menu-item" onclick="scrollToSection('rooms')">Rooms</div>
+    <p></p>
     <div class="menu-item" onclick="scrollToSection('review')">Reviews</div>
+    <p></p>
     <div class="menu-item" onclick="scrollToSection('rates')">Rates</div>
-    <div class="menu-item" onclick="scrollToSection('contact')">Contact</div>
+    <p></p>
     <div class="menu-item" onclick="navigateTo('policies')">Policies</div>
+    <p></p>
+    <div class="menu-item" onclick="scrollToSection('contact')">Contact</div>
 </div>
   
   <nav id="sticky-menu">
-    <p></p>
     <a href="#home">HOME</a>
     <a href="#facilities">FACILITIES</a>
     <a href="#rooms">ROOMS</a>
     <a href="#review">REVIEWS</a>
     <a href="#rates">RATES</a>
-    <a href="#contact">CONTACT</a>
     <a href="policies.html">POLICY</a>
+    <a href="#contact">CONTACT</a>
     <p></p>
   </nav>
+
+  <nav class="additional-header" id="addhead"><p><br></p></nav>
   
   <div class="content-container">
     <div class="section-one">
