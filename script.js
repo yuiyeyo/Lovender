@@ -39,8 +39,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function toggleMenu() {
     var menuOverlay = document.getElementById("menuOverlay");
-    menuOverlay.style.display = (menuOverlay.style.display === "block") ? "none" : "block";
+    var burgerButton = document.getElementById("burgerButton");
+
+    // Toggle the 'burgermenu-fadeIn' class to control the fade-in effect
+    menuOverlay.classList.toggle("burgermenu-fadeIn");
+
+    burgerButton.classList.toggle("active");
+
+    // Toggle the visibility after the animation duration
+    setTimeout(function () {
+        menuOverlay.style.display = (menuOverlay.classList.contains("burgermenu-fadeIn")) ? "block" : "none";
+    }, 100); // 300 milliseconds, adjust as needed
 }
+
+// Add an event listener to each menu item to close the menu when clicked
+var menuItems = document.querySelectorAll(".menu-item");
+menuItems.forEach(function (item) {
+    item.addEventListener("click", function () {
+        toggleMenu();
+    });
+});
 
 function scrollToSection(sectionId) {
     var section = document.getElementById(sectionId);
@@ -245,4 +263,19 @@ document.addEventListener('DOMContentLoaded', function() {
     images.forEach((image, index) => {
         image.style.display = index === currentIndexReview ? 'block' : 'none';
     });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const addhead = document.getElementById("addhead");
+    const sticky = addhead.offsetTop;
+
+    function handleScroll() {
+        if (window.pageYOffset >= sticky) {
+            addhead.classList.add("sticky");
+        } else {
+            addhead.classList.remove("sticky");
+        }
+    }
+
+    window.onscroll = handleScroll;
 });
