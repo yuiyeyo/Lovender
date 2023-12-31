@@ -549,7 +549,7 @@ height: auto;
   overflow-y: hidden;
   padding-left: 10%;
   padding-right:10%;
-  height:600px;
+  height:900px;
   font-family: 'Mulish', sans-serif;
   text-align: center;
   color: #000;
@@ -606,51 +606,20 @@ gmp-map {
   height: 100%;
 }
 
-.review {
-    text-align: center;
-}
 
-.review-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.review img {
-    max-width: 500px;
-    display: none;
-  position: absolute; 
-  width: 60vw; 
-  left: 50%; 
-  top: 30%; 
+.reviews-container {
+  max-width: 50%;
+  height:250px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
   transform: translateX(-50%);
 }
 
-@media only screen and (max-width: 768px) {
-     .review img {
-       top: 15%;
-       width: 100%;
-     }
-}
-
-.prev-btn{
-  margin-right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-  position:absolute; left: 15%; top: 55%; transform: translateX(-50%);
-}
-
-.next-btn 
+.sil-widget-star-rating sil-widget
 {
-    font-size: 24px;
-    cursor: pointer;
-  position:absolute; left: 85%; top: 55%; transform: translateX(-50%);
+  font-size: 18px;
 }
-
-
-
-
 
 
 @media only screen and (max-width: 768px) {
@@ -659,6 +628,9 @@ gmp-map {
     height: 10vh; 
     font-size: 24px;
   }
+
+  
+  
   nav {
       top: 11vh; 
       font-size: 10px;
@@ -689,7 +661,7 @@ gmp-map {
   }
 
   .section-six{
-    height:450px;
+    height:900px;
   }
 
   .slideshow-container {
@@ -712,16 +684,5 @@ gmp-map {
     top:0vh;
   }
 
-  .prev-btn{
-    left: 5%;
-     top: 35%;
-    font-size: 10px;
-   } 
-  
-  .next-btn {
-    left: 95%;
-     top: 35%;
-    font-size: 10px;
-   }
 
 }
