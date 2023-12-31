@@ -296,64 +296,13 @@
     <div class="review">
       <p></p>
         <h2>Reviews</h2>
-        <!--<h2> Have you Stayed with us? Tell us What You Think!</h2>-->
-
-
-              <div class="reviews-container">
-                <!-- Textboxes (slides) -->
-                <div class="reviewisi">
-                <p style="font-weight: 700;">Aurielle</p>
-                  <p>gud place gud place</p>
-                  
-                </div>
-                <div class="reviewisi">Textbox 2 content</div>
-                <div class="reviewisi">Textbox 3 content</div>
-
-                <!-- Navigation buttons (previous/next) -->
-                <a class="prev" onclick="plusReview(-1)">❮</a>
-                <a class="next" onclick="plusReview(1)">❯</a>
-              </div>
-
-
-
-          <div class="formcontainer">
-
-          <form action="https://script.google.com/macros/s/AKfycbyVTSJZJRAEjK1_5-rpYIEXCU1sVYfJzjvaA_DYQe6HwnFYH0Zy4sThNfEh3hS1FgR8/exec" method="POST" style="position: absolute; text-align: left; top: 0%" onsubmit="submitForm(); return false;">
-
-              <!-- Add your form fields here -->
-
-              <label for="Name">Your Name:</label><br>
-              <input type="text" id="name" name="Name" required><br>
-
-             <label for="Age">Your Age (optional):</label><br>
-              <input type="number" id="age" name="Age" min="1" max="100" ><br>
-
-            <label for="Email">Email (optional):</label><br>
-            <input type="email" id="email" name="Email"><br>
-
-              <label for="City">Your City:</label><br>
-              <input type="text" id="city" name="City" required><br>
-
-              <label for="Duration">Duration of Stay (nights):</label><br>
-              <input type="number" id="duration" name="Duration" min="1" required><br><br>
-
-              <label for="Comments">Your Comments and Reviews:</label><br>
-              <textarea name="Comments" id="comments" placeholder="Enter your message" rows="10" cols="10" required></textarea>
-            
-
-              <!-- Add more fields as needed -->
-              <br>
-              <input type="submit" value="Submit" >
-
-
-          </form>
+<div class="review-container">
+  <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/reviews/review%201.png" alt="Review 1">
+    <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/reviews/review%202.png" alt="Review 2" >
+      <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/reviews/review%203.png" alt="Review 3">
         </div>
-          <div><!--<h2> Have you Stayed with us? Tell us What You Think!</h2>-->
-            <h2 style="position: absolute; text-align: center; top:35%; right:10%"> Have you Stayed with us?<br>Tell us What You Think!</h2></div>
-          <br>
-          <!--<h2>Have you stayed with us? Tell us what you think!</h2>-->
-        
-
+          <button class="prev-btn" onclick="changeImageReview(-1)">❮</button>
+<button class="next-btn" onclick="changeImageReview(1)">❯</button>
     </div>
   </div>
 <div class="section-seven" id="rates">
