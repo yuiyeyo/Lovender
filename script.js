@@ -243,28 +243,6 @@ $(document).ready(function () {
     });
 });
 
-
-let currentIndexReview = 0;
-
-function showImageReview(index) {
-    const images = document.querySelectorAll('.review img');
-    images[currentIndexReview].style.display = 'none';
-    currentIndexReview = (index + images.length) % images.length;
-    images[currentIndexReview].style.display = 'block';
-}
-
-function changeImageReview(delta) {
-    showImageReview(currentIndexReview + delta);
-}
-
-// Set the initial state for all images
-document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('.review img');
-    images.forEach((image, index) => {
-        image.style.display = index === currentIndexReview ? 'block' : 'none';
-    });
-});
-
 document.addEventListener("DOMContentLoaded", function() {
     const addhead = document.getElementById("addhead");
     const sticky = addhead.offsetTop;
@@ -278,4 +256,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     window.onscroll = handleScroll;
+});
+
+
+
+$(document).ready(function () {
+    $("[data-fancybox='room-gallery']").fancybox({
+        loop: true,
+        thumbs: {
+            autoStart: true,
+        },
+        caption: function(instance, current) {
+            return $(current.opts.$orig).attr('alt');
+        },
+    });
 });
