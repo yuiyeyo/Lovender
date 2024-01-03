@@ -731,6 +731,24 @@ gmp-map {
   max-width: 850px;
 
 }
+
+a:link {
+  color: #EFEAE6; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: #EFEAE6;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.cntcs {
+    unicode-bidi: bidi-override;
+    direction: ltr;
+}
+
 @media only screen and (max-width: 768px) {
   .widget{
     width:100%;
